@@ -1,3 +1,26 @@
+
+#Project structure 
+
+emoticonnect-mvp/
+│
+├── src/
+│   ├── __init__.py
+│   ├── preprocessor.py
+│   └── emotion_recognizer.py
+│
+├── tests/
+│   ├── __init__.py
+│   ├── test_preprocessor.py
+│   └── test_emotion_recognizer.py
+│
+├── .env
+├── .gitignore
+├── main.py
+├── requirements.txt
+└── README.md
+
+
+
 # emoticonnect
 An app to help people in their emotional well being
 
