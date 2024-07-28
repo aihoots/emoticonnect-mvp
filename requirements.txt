@@ -1,0 +1,59 @@
+nltk==3.6.3
+anthropic==0.2.9
+openai==0.27.0
+python-dotenv==0.19.1
+
+
+# Now, let's explain the requirements and their purposes:
+
+# nltk==3.6.3
+
+# NLTK (Natural Language Toolkit) is used for text preprocessing tasks such as tokenization and stop word removal.
+# We use it in the preprocess_input function to tokenize the text and remove stop words.
+
+
+# anthropic==0.2.9
+
+# This is the official Python client for the Anthropic API, which we use to interact with Claude.
+# It's used in the recognize_emotion function when the model is set to "claude".
+
+
+# openai==0.27.0
+
+# This is the official Python client for the OpenAI API, which we use to interact with ChatGPT.
+# It's used in the recognize_emotion function when the model is set to "chatgpt".
+
+
+# python-dotenv==0.19.1
+
+# This library is used to load environment variables from a .env file.
+# We use it to securely store and access API keys without hardcoding them in the script.
+
+
+
+# Here's a breakdown of how these requirements are used in the code:
+
+# NLTK is used in the preprocess_input function for tokenization and stop word removal.
+# The Anthropic and OpenAI libraries are used in the recognize_emotion function to make API calls to Claude and ChatGPT respectively.
+# python-dotenv is used at the beginning of the script to load the API keys from the .env file.
+
+
+
+
+# emoticonnect-mvp/
+# │
+# ├── src/
+# │   ├── __init__.py
+# │   ├── preprocessor.py
+# │   └── emotion_recognizer.py
+# │
+# ├── tests/
+# │   ├── __init__.py
+# │   ├── test_preprocessor.py
+# │   └── test_emotion_recognizer.py
+# │
+# ├── .env
+# ├── .gitignore
+# ├── main.py
+# ├── requirements.txt
+# └── README.md
