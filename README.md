@@ -1,24 +1,53 @@
 
-#Project structure 
+# EmotiConnect MVP
 
-emoticonnect-mvp/
-│
-├── src/
-│   ├── __init__.py
-│   ├── preprocessor.py
-│   └── emotion_recognizer.py
-│
-├── tests/
-│   ├── __init__.py
-│   ├── test_preprocessor.py
-│   └── test_emotion_recognizer.py
-│
-├── .env
-├── .gitignore
-├── main.py
-├── requirements.txt
-└── README.md
+EmotiConnect is an AI-powered emotional support platform. This MVP demonstrates the core functionality of emotion recognition using multiple AI models.
 
+## Setup
+
+1. Create a virtual environment:
+
+python3 -m venv venv
+source venv/bin/activate  # On Windows use venv\Scripts\activate
+
+
+
+2. Install dependencies:
+pip install -r requirements.txt
+
+
+3. Create a .env file in the project root and add your API keys:
+ANTHROPIC_API_KEY=your_anthropic_api_key_here
+OPENAI_API_KEY=your_openai_api_key_here
+
+
+## Running the Application
+
+Run the main script:
+python main.py
+
+
+
+
+Enter text when prompted. The application will preprocess the text and use both Claude and ChatGPT to recognize the emotion. Type 'quit' to exit.
+
+## Project Structure
+
+- `src/`: Contains the core functionality
+  - `preprocessor.py`: Text preprocessing functions
+  - `emotion_recognizer.py`: Emotion recognition using AI models
+- `tests/`: Contains unit tests (to be implemented)
+- `main.py`: The main application script
+- `requirements.txt`: List of Python dependencies
+- `.env`: Contains API keys (not version controlled)
+- `.gitignore`: Specifies intentionally untracked files to ignore
+
+## Next Steps
+
+- Implement unit tests
+- Expand emotion recognition capabilities
+- Implement intent classification
+- Develop context manager for maintaining conversation state
 
 
 # emoticonnect
