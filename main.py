@@ -8,12 +8,10 @@ def main():
             break
         
         processed_text = preprocess_input(user_input)
-        claude_emotion = recognize_emotion(processed_text, model="claude")
-        chatgpt_emotion = recognize_emotion(processed_text, model="chatgpt")
+        emotion = recognize_emotion(processed_text)
         
         print(f"Processed text: {processed_text}")
-        print(f"Claude detected emotion: {claude_emotion}")
-        print(f"ChatGPT detected emotion: {chatgpt_emotion}")
+        print(f"Detected emotion: {emotion}")
         print("---")
 
 if __name__ == "__main__":

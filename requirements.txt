@@ -1,7 +1,6 @@
 nltk==3.6.3
-anthropic==0.2.9
-openai==0.27.0
 python-dotenv==0.19.1
+requests==2.26.0
 
 
 # Now, let's explain the requirements and their purposes:
